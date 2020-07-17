@@ -41,12 +41,13 @@ class Waiter
 
   def self.average_tip_for_most_experienced_waiter
     the_most_experienced_waiter = self.all.max_by {|waiter| waiter.yrs_experience}
-    a = the_most_experienced_waiter.meals.map {|m| m.tip}
-    result = a.sum(0.0) / a.size
+    x = the_most_experienced_waiter.meals.map {|m| m.tip}
+    result = x.sum(0.0) / x.size
   end
 
   def self.average_tip_for_least_experienced_waiter
     the_least_experienced_waiter = self.all.min_by{|waiter| waiter.yrs_experience}
-    a = the_least_experienced_waiter.meals.map {|m| m.tip}
+    y = the_least_experienced_waiter.meals.map {|m| m.tip}
+    result =
   end
 end
