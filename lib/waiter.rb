@@ -35,7 +35,7 @@ class Waiter
   end
 
   def most_frequent_customer
-    meals.map{|m| m.customer}
+    customers = meals.map{|m| m.customer}
   end
 
 end
