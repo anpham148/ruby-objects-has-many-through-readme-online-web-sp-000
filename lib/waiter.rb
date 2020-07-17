@@ -40,5 +40,7 @@ class Waiter
   end
 
   def self.average_tip_for_most_experienced_waiter
+    waiters_experience = Hash.new(0)
+    self.all.
   end
 end
