@@ -39,10 +39,6 @@ class Waiter
     customers.max_by {|customer| customers.count(customer)}
   end
 
-  # def total_tip
-  #   meals.
-  # end
-
   def self.average_tip_for_most_experienced_waiter
     the_most_experienced_waiter = self.all.max_by {|waiter| waiter.yrs_experience}
     a = the_most_experienced_waiter.meals.map {|m| m.tip}
