@@ -47,5 +47,6 @@ class Waiter
 
   def self.average_tip_for_least_experienced_waiter
     the_least_experienced_waiter = self.all.min_by{|waiter| waiter.yrs_experience}
+    a = the_least_experienced_waiter.meals.map {|m| m.tip}
   end
 end
