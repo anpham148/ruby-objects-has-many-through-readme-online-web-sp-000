@@ -249,8 +249,8 @@ describe "Object relationships" do
         esmery = Waiter.new("Esmery", 2)
         andrew = Waiter.new("Andrew", 3)
 
-    
-        howard.new_meal(joe, 15, 4)
+
+        howard.new_meal(joe, 15, 6)
         howard.new_meal(andrew, 15, 5)
         daniel.new_meal(terrance, 20, 1)
         daniel.new_meal(esmery, 15, 3)
