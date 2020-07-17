@@ -47,6 +47,6 @@ class Waiter
     waiters_experience = Hash.new(0)
     the_most_experienced_waiter = self.all.max_by {|waiter| waiter.yrs_experience}
     binding.pry
-     == the_most_experienced_waiter
+    
   end
 end
