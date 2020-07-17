@@ -47,7 +47,7 @@ class Waiter
     waiters_experience = Hash.new(0)
     the_most_experienced_waiter = self.all.max_by {|waiter| waiter.yrs_experience}
     a = the_most_experienced_waiter.meals.map {|m| m.tip}
-    binding.pry
+    
 
   end
 end
