@@ -235,8 +235,8 @@ describe "Object relationships" do
         josh.new_meal(joe, 12, 3)
 
         expect(joe.most_frequent_customer). to eq(howard)
-
       end
     end
+    
   end
 end
