@@ -46,7 +46,7 @@ class Waiter
   def self.average_tip_for_most_experienced_waiter
     waiters_experience = Hash.new(0)
     self.all.max_by {|waiter| waiter.yrs_experience}
-
+    binding.pry
     the_most_experienced_waiter == the_most_experienced_waiter
   end
 end
