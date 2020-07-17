@@ -44,4 +44,6 @@ class Waiter
     a = the_most_experienced_waiter.meals.map {|m| m.tip}
     result = a.sum(0.0) / a.size
   end
+
+  def self.av
 end
