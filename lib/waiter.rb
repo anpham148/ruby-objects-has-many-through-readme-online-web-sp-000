@@ -37,7 +37,6 @@ class Waiter
   def most_frequent_customer
     customers = meals.map{|m| m.customer}
     customers.max_by {|customer| customers.count(customer)}
-
   end
 
 end
