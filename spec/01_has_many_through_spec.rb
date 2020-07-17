@@ -229,6 +229,7 @@ describe "Object relationships" do
         daniel.new_meal(terrance, 20, 1)
         daniel.new_meal(esmery, 15, 3)
 
+        andrew.most_frequent_customer
 
       end
     end
