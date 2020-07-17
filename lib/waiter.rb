@@ -45,5 +45,5 @@ class Waiter
     result = a.sum(0.0) / a.size
   end
 
-  def self.av
+  def self.average_tip_for_least_experienced_waiter
 end
