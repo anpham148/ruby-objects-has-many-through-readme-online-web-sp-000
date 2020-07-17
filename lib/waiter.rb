@@ -36,8 +36,10 @@ class Waiter
 
   def most_frequent_customer
     customers = meals.map{|m| m.customer}
-    customers.each {|c| c}
-  
+    customers_count = Hash.new(0)
+    customers.each {|customer| customer_count[customer] += 1}
+    customers_count.sort_by{|customer, occurences| occurences}.last[0]
+
   end
 
 end
