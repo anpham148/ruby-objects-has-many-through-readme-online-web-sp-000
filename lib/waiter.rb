@@ -41,6 +41,6 @@ class Waiter
 
   def self.average_tip_for_most_experienced_waiter
     waiters_experience = Hash.new(0)
-    self.all.
+    self.all.each {|waiter| waiters_experience[waiter.name] = waiter.yrs_experience}
   end
 end
