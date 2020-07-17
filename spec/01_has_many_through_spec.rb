@@ -218,6 +218,9 @@ describe "Object relationships" do
       it "returns the most frequent customer associated with this waiter" do
         howard = Customer.new("Howard", 30)
         daniel = Customer.new("Daniel", 30)
+        lisa = Customer.new("Lisa", 27)
+        josh = Customer.new("Josh", 31)
+        steven = Customer.new("Steven", 28)
         terrance = Waiter.new("Terrance", 1)
         joe = Waiter.new("Joe", 10)
         esmery = Waiter.new("Esmery", 2)
