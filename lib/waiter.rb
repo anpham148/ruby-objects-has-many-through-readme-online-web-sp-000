@@ -46,4 +46,5 @@ class Waiter
   end
 
   def self.average_tip_for_least_experienced_waiter
+  end
 end
