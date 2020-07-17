@@ -39,11 +39,14 @@ class Waiter
     customers.max_by {|customer| customers.count(customer)}
   end
 
+  def total_tip
+  end
+
   def self.average_tip_for_most_experienced_waiter
     waiters_experience = Hash.new(0)
     self.all.each {|waiter| waiters_experience[waiter.name] = waiter.yrs_experience}
     the_most_experienced_waiter = waiters_experience.sort_by{|name, yrs_experience| yrs_experience}.last[0]
-    
+
     binding.pry
   end
 end
