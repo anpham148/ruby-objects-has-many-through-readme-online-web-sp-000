@@ -47,7 +47,7 @@ class Waiter
     waiters_experience = Hash.new(0)
     self.all.each {|waiter| waiters_experience[waiter.name] = waiter.yrs_experience}
     the_most_experienced_waiter = waiters_experience.sort_by{|name, yrs_experience| yrs_experience}.last[0]
-
+    the most_experienced_waiter.meals.tip
     binding.pry
   end
 end
