@@ -36,6 +36,8 @@ class Waiter
 
   def most_frequent_customer
     customers = meals.map{|m| m.customer}
+    customers.each {|c| c}
+    binding.pry
   end
 
 end
