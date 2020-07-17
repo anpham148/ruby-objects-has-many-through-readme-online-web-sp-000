@@ -11,7 +11,7 @@ class Waiter
 
   def self.all
     @@all
-    binding.pry
+
   end
 
   def new_meal(customer, total, tip=0)
@@ -27,6 +27,7 @@ class Waiter
   def best_tipper
     best_tipped_meal = meals.max{|a, b| a.tip <=> b.tip}
     best_tipped_meal.customer
+    binding.pry
   end
 
   def worst_tipper
