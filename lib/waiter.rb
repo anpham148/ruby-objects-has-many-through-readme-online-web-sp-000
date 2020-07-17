@@ -39,8 +39,9 @@ class Waiter
     customers.max_by {|customer| customers.count(customer)}
   end
 
-  def total_tip
-  end
+  # def total_tip
+  #   meals.
+  # end
 
   def self.average_tip_for_most_experienced_waiter
     waiters_experience = Hash.new(0)
