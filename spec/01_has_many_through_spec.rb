@@ -260,7 +260,7 @@ describe "Object relationships" do
         expect(Waiter.average_tip_for_most_experienced_waiter). to eq(6)
       end
     end
-    describe ".average_tip_for_most_experienced_waiter" do
+    describe ".average_tip_for_least_experienced_waiter" do
       it "returns the average tip for the most experienced waiter" do
         howard = Customer.new("Howard", 30)
         daniel = Customer.new("Daniel", 30)
