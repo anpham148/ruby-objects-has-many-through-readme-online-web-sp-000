@@ -26,7 +26,7 @@ class Waiter
   def best_tipper
     best_tipped_meal = meals.max{|a, b| a.tip <=> b.tip}
     best_tipped_meal.customer
-
+   binding.pry
   end
 
   def worst_tipper
@@ -48,6 +48,6 @@ class Waiter
     self.all.each {|waiter| waiters_experience[waiter.name] = waiter.yrs_experience}
     the_most_experienced_waiter = waiters_experience.sort_by{|name, yrs_experience| yrs_experience}.last
 
-   binding.pry
+
   end
 end
