@@ -231,6 +231,8 @@ describe "Object relationships" do
         howard.new_meal(andrew, 15, 5)
         daniel.new_meal(terrance, 20, 1)
         daniel.new_meal(esmery, 15, 3)
+        lisa.new_meal(joe, 34, 2)
+        josh.new_meal(joe, 12, 3)
 
         andrew.most_frequent_customer
 
