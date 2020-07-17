@@ -257,7 +257,7 @@ describe "Object relationships" do
         lisa.new_meal(joe, 34, 5)
         josh.new_meal(joe, 12, 7)
 
-        expect(Waiter.average_tip_for_most_experienced_waiter). to eq()
+        expect(Waiter.average_tip_for_most_experienced_waiter). to eq(6)
       end
     end
   end
